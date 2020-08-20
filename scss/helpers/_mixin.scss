@@ -1,0 +1,14 @@
+@mixin ipad{
+    @media(max-width:768px){
+        @content;
+    }
+}
+
+@mixin radiusBtn($color, $fontSize, $px, $py){
+    color:$color;
+    border:2px solid $color;
+    font-size: $fontSize;
+    padding:$px $py;
+    border-radius: 30px;
+    display:inline-block;
+}

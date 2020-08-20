@@ -1,0 +1,22 @@
+.footer{
+    background: $primary;
+    padding:20px 0 22px 0;
+
+    img{
+        display:block;
+        width: 128px;
+        height: 38px;
+        margin-right: 20px;
+    }
+
+    
+    .allRight{
+        font-size: 14px;
+    }
+
+    &List a{
+        display:block;
+        margin-right: 36px;
+        color:$white;
+    }
+}

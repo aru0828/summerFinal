@@ -1,0 +1,53 @@
+.seeMore{
+    color:#AC8A46;
+}
+
+.banner{
+    background-image:url('/img/smallBanner.png');
+    height: 870px;
+
+    &Txt{
+        font-size:24px;
+        
+        .radiusBtn{
+            @include radiusBtn(white, 28px, 13px, 109px);
+           
+        }
+        
+        .radiusBtn:hover{
+            color: #fff;
+            background-color: rgba(255, 255, 255 ,0.2);
+            border-color: #fff;
+        }
+    }  
+}
+
+
+
+.productIntro{
+    .row:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    
+
+    .IntroTxtPoint{
+        margin-bottom: 52px;
+    }
+
+    .radiusBtn{
+        @include radiusBtn(#000000, 20px, 16px, 51px);
+    }
+    .radiusBtn:hover{
+        color: #000000;
+        background-color: rgba(55, 55, 55 ,0.1);
+        border-color: #000000;
+    }
+
+}
+
+.productSwipe{
+    background: #E0E0E0;
+    padding:40px 0;
+
+    
+}
