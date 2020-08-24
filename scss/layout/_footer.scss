@@ -1,6 +1,6 @@
 .footer{
     background: $primary;
-    padding:20px 0 22px 0;
+    padding:20px 15px 22px 0;
 
     img{
         display:block;
@@ -14,9 +14,19 @@
         font-size: 14px;
     }
 
+    &Logo{
+        @include ipad{
+            width: 100%;
+        }
+    }
+
     &List a{
         display:block;
         margin-right: 36px;
         color:$white;
+    }
+
+    a:hover{
+        color:$black;
     }
 }

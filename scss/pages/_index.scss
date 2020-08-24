@@ -1,19 +1,26 @@
 .seeMore{
     color:#AC8A46;
 }
-
 .banner{
     background-image:url('/img/smallBanner.png');
     height: 870px;
+    @include ipad{
+        height: 480px;
+
+        p{
+            font-size: 20px;
+        }
+    }
 
     &Txt{
         font-size:24px;
         
         .radiusBtn{
             @include radiusBtn(white, 28px, 13px, 109px);
-           
-        }
-        
+            @include ipad{
+                @include radiusBtn(white, 28px, 13px, 106px);
+            }
+        }      
         .radiusBtn:hover{
             color: #fff;
             background-color: rgba(255, 255, 255 ,0.2);
@@ -21,19 +28,16 @@
         }
     }  
 }
-
-
-
 .productIntro{
-    .row:nth-child(even){
-        flex-direction: row-reverse;
+    margin-bottom: 40px;
+    @include ipad{
+        >.container>.row{
+            margin-bottom: 32px;
+        }
     }
-    
-
     .IntroTxtPoint{
         margin-bottom: 52px;
     }
-
     .radiusBtn{
         @include radiusBtn(#000000, 20px, 16px, 51px);
     }
@@ -42,12 +46,40 @@
         background-color: rgba(55, 55, 55 ,0.1);
         border-color: #000000;
     }
-
 }
-
 .productSwipe{
     background: #E0E0E0;
     padding:40px 0;
+    margin-bottom: 40px;
 
-    
+    .soldOut{
+        position: relative;
+        background-image: url(/img/swipe.png);
+        background-size: cover;
+       
+        p{  
+            font-size: 24px;
+            color:white;
+            font-weight: bolder;;
+            position: absolute;
+            top:45%;
+            left:36%;
+        }
+    }
+}
+.recycling {
+    margin-bottom: 60px;
+
+    img{
+        height: 520px;
+    }
+    @include ipad{
+        margin-bottom: 40px;
+        &Img{
+            padding-right: 0;
+        }
+        &Txt{
+            padding-left: 0;
+        }
+    }
 }

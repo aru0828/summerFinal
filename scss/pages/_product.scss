@@ -1,0 +1,15 @@
+.productMain{
+    padding:0 15px;
+    @include ipad{
+        padding-top: 42px;
+    }
+
+    
+
+    .pagination{
+        .active {
+            border-bottom:1px solid $primary;
+            margin-bottom: 60px;
+        }
+    }
+}

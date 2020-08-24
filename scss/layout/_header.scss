@@ -5,18 +5,82 @@ h1{
     background-repeat: no-repeat;
     text-indent: 101%;
     overflow: hidden;
+    
 }
 
+.header{
+    position: relative;
+    padding:9px 0px;
+
+
+    .mobileCart{
+        position: relative;
+        margin-right: 36px;
+        .cartNum{
+            text-align:center;
+            color:white;
+            position: absolute;
+            font-size: 12px;
+            width: 16px;
+            height: 16px;
+            top:-15%;
+            right:-45%;
+            border-radius: 50%;
+            background: $primary;
+        }
+    }
+    
+    @include ipad{
+        padding:9px 15px;
+    }
+}
+
+
+
 .headerList{
+    justify-content: center;
+    display:flex;
     a{
         display:flex;
         align-items: center;
         margin-right: 32px;
         color:$secondary;
+        justify-content: center;
+    }
+
+    a:hover{
+        color:black;
     }
     img{
         width: 20px;
         height: 16px;
         margin-right: 4px;
+
+        @include ipad{
+            display: none;
+        }
+    }
+
+    @include ipad{      
+        display: none;  
+        padding-left: 0;
+        position: absolute;
+        z-index: 1;
+        top:100%;
+        left:0;
+        right:0;
+        li{
+            width: 100%;
+            background: #707070;
+            border-bottom:1px solid white;
+            a{
+                margin:0 auto;
+                padding:12px 0;
+                text-align: center;
+                color:white;
+            }
+        }
+
+      
     }
 }

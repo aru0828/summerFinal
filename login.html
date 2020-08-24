@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/shopping-cart.svg">
+    <meta name='description' content="D'PERFUME購物網站" />
+    <meta property="og:title" content="D'PERFUME" />
+    <meta property="og:description" content="各大品牌化妝品">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link rel="stylesheet" href="scss/css/all.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/all.js"></script>
+    <title>D'PERFUME Login</title>
+
+</head>
+
+<body>
+
+    <header class="header container d-flex justify-content-between align-items-center">
+        <a href="index.html">
+            <h1 class="mb-0">D'PERFUME</h1>
+        </a>
+        <div class="">
+            <ul class="headerList  d-md-flex flex-column  flex-md-row   font-size-20  ">
+                <li>
+                    <a href="product.html">
+                        <img src="img/tshirt.svg" alt="">
+                        Product
+                    </a>
+                </li>
+
+                <li class="order-md-3">
+                    <a href="#">
+                        <img src="img/heart.svg" alt="">
+                        Wishlist
+                    </a>
+                </li>
+                <li class=" d-md-none">
+                    <a href="#">
+                        blog
+                    </a>
+                </li>
+                <li class=" d-md-none">
+                    <a href="#">
+                        <img src="img/heart.svg" alt="">
+                        Contact
+                    </a>
+                </li>
+                <li class="order-md-2">
+                    <a href="login.html">
+                        <img src="img/user-alt.svg" alt="">
+                        log in
+                    </a>
+                </li>
+                <li class="d-none d-md-block order-md-4">
+                    <a href="#" class="mr-0">
+                        <img src="img/shopping-cart.svg" alt="">
+                        Cart(3)
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="mobielTools d-flex d-md-none ">
+            <a class="mobileCart" href="#" class="mr-4">
+                <img src="img/shopping-cart.svg" alt="">
+                <div class="cartNum">
+                    3
+                </div>
+            </a>
+            <a href="#" class="toggleBtn ">
+                <img src="/img/bars.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <div class="brandBar bg-primary d-none d-md-block">
+        <div class="container px-0">
+            <ul class="brandBarList  d-flex font-size-20 px-0">
+                <li>
+                    <a href="#">CHANEL</a>
+                </li>
+                <li>
+                    <a href="#">Jo Malone</a>
+                </li>
+                <li>
+                    <a href="#">Curology</a>
+                </li>
+                <li>
+                    <a href="#">Dior</a>
+                </li>
+                <li>
+                    <a href="#">Chloe</a>
+                </li>
+                <li>
+                    <a href="#">ZARA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--page-->
+    <div class="login container">
+        <div class="row align-items-center">
+            <div class="col-md-8 pl-md-0">
+                <img class="loginImg" src="/img/login.png" alt="">
+            </div>
+            <div class="col-md-4 pr-md-0">
+                <h2 class="font-weight-bolder">Log in</h2>
+                <form>
+                    <div class="form-group">
+                      <label class="mb-1" for="exampleInputEmail1">帳號</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group passwordGroup">
+                      <label class="mb-1" for="exampleInputPassword1">密碼</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                 
+                    <div class="loginBtnGroup d-flex justify-content-between align-items-center">
+                        <a href="#" class="text-primary font-weight-bolder">忘記密碼</a>
+                        <div>
+                            <a href="" class="btn btn-outline-primary mr-2">註冊</a>
+                            <a href="memberProfile.html" class="btn btn-primary">登入</a>
+                        </div>
+                        
+                    </div>
+                    
+                  </form>
+            </div>
+        </div>
+    </div>
+    <!--page-->
+
+    <div class="d-none d-md-block subscribe container-fluid row align-items-end ml-0">
+        <div class="container px-0">
+            <div class="subscribeTxt col-12 col-lg-4 px-md-0">
+                <p class="h2 text-secondary font-weight-bolder">記得<br>訂閱以獲取更多資訊！</p>
+
+                <div class="input-group input-group-lg mb-3">
+                    <input type="text" class="form-control subscribeInput" placeholder="Your email address"
+                        aria-label="Your email address" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container-fluid">
+        <div class="container d-flex  align-items-center  justify-content-between px-md-0 pr-0">
+            <div class="footerLogo d-flex  justify-content-between align-items-center">
+                <a href="index.html">
+                    <img class="" src="img/d’Perfumew.png" alt="">
+                </a>
+                <p class="allRight mb-0 text-white">© 2020. All Rights Reserved.</p>
+            </div>
+
+            <ul class="footerList d-none d-md-flex font-size-20 ">
+                <li>
+                    <a href="product.html">
+                        Product
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a class="mr-0" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

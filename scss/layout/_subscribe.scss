@@ -1,9 +1,14 @@
 .subscribe{
-    height: 600px;
     background-image: url(/img/smallSubscrible.png);
-    fill:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   @include ipad{
+       background-image: url(/img/mobileSubscribe.png);
+   }
 
     &Txt{
+        padding-top: 312px;
         padding-bottom: 112px;
 
         p{

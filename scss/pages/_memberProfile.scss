@@ -1,0 +1,44 @@
+.memberProfile{
+    h2{
+        margin-bottom: 28px;
+        
+    }
+
+    .memberList{
+        padding-top: 40px;
+        a.active{
+            border-bottom:2px solid $primary;
+            display: inline-block;
+        }
+        a{
+            color:$secondary;
+        }
+
+        a:hover{
+            border-bottom:2px solid $primary;
+            display: inline-block;
+        }
+    }
+    .memberFormTitle{
+        padding-bottom: 8px;
+        border-bottom:1.2px solid $secondary;
+    }
+
+    .memberForm{
+        .formSexSelect{
+            font-size: 16px;
+        }
+
+        .form-check .form-check-input:checked~.form-check-label::before{
+            background-color:black;
+        }
+     
+    }
+
+    .memberList{
+        li{
+         
+        }
+    }
+   
+}

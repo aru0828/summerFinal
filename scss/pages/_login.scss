@@ -1,0 +1,24 @@
+.login{
+    margin-bottom: 82px;
+
+
+   
+    h2{
+        margin-bottom: 12px;
+    }
+
+    .passwordGroup{
+        margin-bottom: 36px;
+    }
+
+    @include ipad{
+        margin-bottom: 106px;
+        padding-top: 42px;
+        &Img{
+                margin-bottom: 28px;
+                height: 220px;
+                width: 100%;
+                background-size: cover;
+            }
+    }
+}

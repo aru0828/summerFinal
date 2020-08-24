@@ -1,0 +1,36 @@
+.productDetail{
+    .numberControl{
+        border:1px solid $primary;
+        border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    .numberControl[type=number]::-webkit-inner-spin-button {
+        opacity: 1
+    }
+
+    .addCartBtn{
+        padding:6px 0;
+        width: 100%;
+        border-radius: 0 0.25rem 0.25rem 0;
+        white-space:nowrap;
+    }
+
+    .producrDetailTxt{
+        margin-bottom: 80px;
+        .addFavorite{
+            color:black;
+        }
+    }
+
+    .customRead{
+        margin-bottom: 40px;
+    }
+
+    @include ipad{
+        padding-top: 40px;
+        .producrDetailTxt{
+            margin-bottom: 40px;
+           
+        }
+    }
+}
